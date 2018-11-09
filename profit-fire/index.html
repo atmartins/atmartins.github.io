@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Profit Fire - Interactive, 3D, projected Video Game</title>
+        <meta name="description" content="Profit Fire is an interactive, site-specific video game/art piece created by Aaron Martins and Sorob Louie.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href='https://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+
+        <div class="container-fluid jumbo">
+            <div class="container">
+                <div class="row">
+                <div class="col-xs-12">
+                    <img src="images/tankWebBanner.jpg" class="fw" alt="Profit Fire - Interactive, 3D, projected Video Game" title="Profit Fire - Interactive, 3D, projected Video Game" />
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <header class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h1>Profit Fire is an interactive, site-specific video game/art piece.</h1>
+                    <h2>Created by <a href="http://aaronmartins.com">Aaron Martins</a> and <a href="http://sorob.com">Sorob Louie</a>.</h2>
+                </div>
+            </div>
+        </header>
+
+        <div class="container content">
+            <div class="row">
+                <div class="col-xs-12 col-md-7 col-md-offset-1">
+                    <iframe src="https://player.vimeo.com/video/25147674?title=0&byline=0&portrait=0" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    <h3>Game Concept</h3>
+                    <p> Certain groups make a lot of money in unethical ways. War, pollution and exploiting labor are some common examples. Profit Fire attempts to satirize this behavior, and bring it to player's attention in a fun and engaging way.</p>
+
+                    <h3>Playing the Game</h3>
+                    <p>Due to the nature of this game, it will only be played during a one-night &quot;showing&quot; (located on the University of Oregon's campus). The primary purpose is to function as a piece of interactive art.</p>
+                    <p>Players load the game on to their Android phones and connect to the server. Once the game is running, each player can choose from one of three &quot;corporate sponsors&quot; and begin firing projectiles at the target. The type of projectile that is fired is significant, and is determined by which &quot;corporate sponsor&quot; was chosen.</p>
+                    <p>The phone acts as a window in to a 3D world, and to look around the player simply moves his or her phone in different directions. When the screen is tapped, a &quot;fire!&quot; signal is broadcast, and the server portion of the game displays a projectile hitting the actual part of the building. (See the video to get a better idea of how it works).</p>
+
+                    <h3>Technical Details</h3>
+                    <p>Profit Fire has two major components, the Android software and the Server software.
+                      The server software is based on the Unity game engine. Sorob Louie created the Unity part of the game and is responsible for network communication between the phone and the server.</p>
+                    <p>The Android portion was written in Processing for Android by Aaron Martins. 2D artwork, 3D Models and texturing were created by Aaron as well.</p>
+
+                    <h3>Challenges</h3>
+                    <p>This project was created in under four weeks. All artwork, programming and 3D models, including the tank commander (60,000 poly model) were created during this process. Almost every line of code (650+ lines) for the Android game was written specifically for this game. </p>
+                    <p>Calculating where a player touches the screen when the phone faces a certain direction was particularly challenging. The following formula was created for this game: <br />
+                    (tan(compass+domain adjustment)+x coordinate of screen being tapped*constant)*range scale adjustment. </p>
+                    <p>Creating very lightweight 3D models, textures and images for use in the phone was challenging but fun. Most Android devices are fairly powerful, so there is a lot of room to grow with this type of thing.</p>
+                    <p>Creating network communication with minimal lag was also a challenge, as well as getting the devices to communicate in the first place. </p>
+                </div>
+                <div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-3 col-md-3 col-md-offset-0">
+                <img src="images/sideBySideLocation.jpg" class="fw" />
+                        <img src="images/texturedBuilding.jpg" alt="3D Model of Profit Fire gameplay location." title="3D Model of Profit Fire gameplay location." class="fw" />
+                        <img src="images/pilot_500_confused.jpg" alt="Profit Fire pilot, confused." title="Confused Pilot" class="fw" />
+                        <img src="images/pilotImagefromSculpt.jpg" alt="Pilot 3d model, untextured." title="Untextured 3d model of the pilot." class="fw" />
+                        <img src="images/tank.jpg" alt="Android loading screen for the Profit Fire game." title="Android loading screen for the Profit Fire game." class="fw" />
+                        <img src="images/bombs1950s.jpg" alt="Untextured 3d bombs for the game" title="Untextured 3d bombs for the game" class="fw" />
+                    </div>
+            </div>
+        </div>
+
+        <footer class="container">
+            <a href="http://aaronmartins.com">Aaron Martins | aaronmartins.com</a>
+            <a href="http://sorob.com">Sorob Louie | sorob.com</a>
+        </footer>
+
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='https://www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-17177979-1','auto');ga('send','pageview');
+        </script>
+    </body>
+</html>

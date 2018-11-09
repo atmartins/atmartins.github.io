@@ -1,0 +1,10 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Aaron Martins -- Designer and Developer
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3, Pug
